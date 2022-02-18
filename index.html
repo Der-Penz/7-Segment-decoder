@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Segment decoder</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="container-display card">
+            <div class="segment seg1">
+                <div class="corner-up"></div>
+                <div class="corner-down"></div>
+            </div>
+            <div class="segment seg2">
+                <div class="corner-up"></div>
+                <div class="corner-down"></div>
+            </div>
+            <div class="segment seg3">
+                <div class="corner-up"></div>
+                <div class="corner-down"></div>
+            </div>
+            <div class="segment seg4">
+                                <div class="corner-up"></div>
+                <div class="corner-down"></div>
+            </div>
+            <div class="segment seg5">
+                                <div class="corner-up"></div>
+                <div class="corner-down"></div>
+            </div>
+            <div class="segment seg6">
+                                <div class="corner-up"></div>
+                <div class="corner-down"></div>
+            </div>
+            <div class="segment seg7">
+                                <div class="corner-up"></div>
+                <div class="corner-down"></div>
+            </div>
+            <div class="segment seg8 dot"></div>
+        </div>
+
+        <div class="container-output card">
+
+            <label class="toggle">
+                <input type="checkbox" checked="true" id="toggle-switch">
+                <span type="button" class="toggle-round-btn"></span>
+            </label>
+
+            <div class="value">
+                <label for="bin">Binary value:</label>
+                <input type="text" name="bin" value="00000000" id="bin" class="text-field">
+                <div class="copy" id="binCopy"></div>
+            </div>
+
+            <div class="value">
+                <label for="hex">Hexadecimal value:</label>
+                <input type="text" name="hex" value="00" id="hex" class="text-field">
+                <div class="copy" id="hexCopy"></div>
+            </div>
+
+            <div class="value">
+                <label for="dec">Decimal value:</label>
+                <input type="text" name="dec" value="0" id="dec" class="text-field">
+                <div class="copy" id="decCopy"></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
